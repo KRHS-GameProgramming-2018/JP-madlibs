@@ -13,7 +13,12 @@ def getMenuInput():
               or response == "X"
               or response == "Exit"):
               response = "Q"
-              goodInput = True              
+              goodInput = True   
+        elif (response == "2"
+              or  response == "two"
+              or  response == "Two"):
+                  response = "2"
+                  goodInput = True 
         else:
             print "Please make a valid choice"
     return response
@@ -45,6 +50,12 @@ def getNumber(prompt, minNumber, maxNumber):
         
             
     return word
+
+# ~ def getPro(prompt):
+    # ~ goodInput = false
+    # ~ while not goodInput:
+        # ~ word = raw_input(prompt)
+        # ~ pros =  ["he",  "she", "they", "it", 
 
 def isSwear(word):
     swearList = ["poop",

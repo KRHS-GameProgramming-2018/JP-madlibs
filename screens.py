@@ -16,7 +16,7 @@ def showMenu():
     output += "---------------------------------------\n"
     output += "|Main Menu:                           |\n"
     output += "|   1) A Story by Spooner             |\n"
-    output += "|                                     |\n"
+    output += "|   2) story pt.2                     |\n"
     output += "|   Q) Quit                           |\n"
     output += "|                                     |\n"
     output += "---------------------------------------\n"
