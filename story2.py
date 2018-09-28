@@ -20,6 +20,7 @@ def playMadlibs():
     output += " of them jumped out of the screen " 
     output += "and" + friend1 
     output += "'s " + Pet 
-    output += " went crazy"
+    output += " went crazy. The" + animals1
+    output += "chased us around the house until" 
     
     return output
