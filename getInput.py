@@ -51,11 +51,19 @@ def getNumber(prompt, minNumber, maxNumber):
             
     return word
 
-# ~ def getPro(prompt):
-    # ~ goodInput = false
-    # ~ while not goodInput:
-        # ~ word = raw_input(prompt)
-        # ~ pros =  ["he",  "she", "they", "it", 
+def getPet(prompt):
+    goodInput = False
+    while not goodInput:
+        word = raw_input(prompt)
+        PetTypes = ["dog", "cat", "fish", "bird", "hamster", "gerbil", "snake"]
+        goodInput = True
+        if word not in PetTypes:
+            print "Not a pet"
+            goodInput = False
+        
+    return word
+        
+       
 
 def isSwear(word):
     swearList = ["poop",

@@ -4,7 +4,7 @@ def showSplash():
     output += "|                                     |\n"
     output += "|              MADLIBS                |\n"
     output += "|                 by                  |\n"
-    output += "|              Some Students          |\n"
+    output += "|           Jake and Peter            |\n"
     output += "|                                     |\n"
     output += "---------------------------------------\n"
 
@@ -16,7 +16,7 @@ def showMenu():
     output += "---------------------------------------\n"
     output += "|Main Menu:                           |\n"
     output += "|   1) A Story by Spooner             |\n"
-    output += "|   2) story pt.2                     |\n"
+    output += "|   2) A Crazy Holiday                |\n"
     output += "|   Q) Quit                           |\n"
     output += "|                                     |\n"
     output += "---------------------------------------\n"
