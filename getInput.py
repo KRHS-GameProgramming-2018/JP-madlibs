@@ -78,8 +78,14 @@ def getHousePart(prompt):
 
 
 def isSwear(word):
-    swearList = ["poop",
-                "piss"
+    swearList = ["shit",
+                "piss",
+                "fuck",
+                "cunt",
+                "ass",
+                "asshole",
+                "bitch",
+                "cock", 
                 ]
     if word in swearList:
         return True
