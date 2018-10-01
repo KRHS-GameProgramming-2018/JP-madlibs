@@ -19,6 +19,11 @@ def getMenuInput():
               or  response == "Two"):
                   response = "2"
                   goodInput = True 
+        elif (response == "4"
+              or  response == "four"
+              or  response == "Four"):
+                  response = "4"
+                  goodInput = True 
         else:
             print "Please make a valid choice"
     return response
@@ -75,8 +80,6 @@ def getHousePart(prompt):
         
     return word
         
-
-
 def isSwear(word):
     swearList = ["shit",
                 "piss",
