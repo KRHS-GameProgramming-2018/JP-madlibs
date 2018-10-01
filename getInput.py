@@ -62,8 +62,20 @@ def getPet(prompt):
             goodInput = False
         
     return word
+    
+def getHousePart(prompt):
+    goodInput = False
+    while not goodInput:
+        word = raw_input(prompt)
+        PartTypes = ["door", "wall", "window", "ceiling", "door frame", "head beam", "walls"]
+        goodInput = True
+        if word not in PartTypes:
+            print "Not a part of a house"
+            goodInput = False
         
-       
+    return word
+        
+
 
 def isSwear(word):
     swearList = ["poop",
