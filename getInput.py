@@ -65,9 +65,15 @@ def getPet(prompt):
     goodInput = False
     while not goodInput:
         word = raw_input(prompt)
-        PetTypes = ["dog", "cat", "fish", "bird", "hamster", "gerbil", "snake"]
+        PetTypes = ["dog", 
+                    "cat", 
+                    "fish", 
+                    "bird", 
+                    "hamster", 
+                    "gerbil", 
+                    "snake"]
         goodInput = True
-        if word not in PetTypes:
+        if word.lower() not in PetTypes:
             print "Not a pet"
             goodInput = False
         
@@ -77,10 +83,34 @@ def getHousePart(prompt):
     goodInput = False
     while not goodInput:
         word = raw_input(prompt)
-        PartTypes = ["door", "wall", "window", "ceiling", "door frame", "head beam", "walls"]
+        PartTypes = ["door", 
+                     "wall", 
+                     "window", 
+                     "ceiling", 
+                     "door frame", 
+                     "head beam", 
+                     "walls"]
         goodInput = True
-        if word not in PartTypes:
+        if word.lower() not in PartTypes:
             print "Not a part of a house"
+            goodInput = False
+        
+    return word
+    
+def getTown(prompt):
+    goodInput = False
+    while not goodInput:
+        word = raw_input(prompt)
+        Towns = ["warner", 
+                 "sutton", 
+                 "new london", 
+                 "wilmot", 
+                 "springfield", 
+                 "newbury", 
+                 "bradford"]
+        goodInput = True
+        if word.lower() not in Towns:
+            print "Not a town in Kearsarge"
             goodInput = False
         
     return word
@@ -89,9 +119,15 @@ def getZooAnimal(prompt):
     goodInput = False
     while not goodInput:
         word = raw_input(prompt)
-        zooAnimals = ["zebra", "lion", "tiger", "rhino", "monkey", "elephant", "seal"]
+        zooAnimals = ["zebras", 
+                      "lions", 
+                      "tigers", 
+                      "rhinos", 
+                      "monkeys", 
+                      "elephants", 
+                      "seals"]
         goodInput = True
-        if word not in zooAnimals:
+        if word.lower() not in zooAnimals:
             print "Not found in a zoo"
             goodInput = False
         
@@ -119,7 +155,7 @@ def isSwear(word):
                 "bitch",
                 "cock", 
                 ]
-    if word in swearList:
+    if word.lower() in swearList:
         return True
     else:
         return False
