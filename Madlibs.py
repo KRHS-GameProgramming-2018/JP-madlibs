@@ -3,6 +3,7 @@ from getInput import *
 import story1
 import story2
 import story4
+import storyJake
 
 print showSplash()
 raw_input("Press Enter to Start")
@@ -20,9 +21,13 @@ while go:
     elif response == "2":
         print story2.playMadlibs()
         raw_input("Press Enter to Continue")
+    elif response == "3":
+        print storyJake.playMadlibs()
+        raw_input("Press Enter to Continue")
     elif response == "4":
         print story4.playMadlibs()
         raw_input("Press Enter to Continue")
     else:
         print "OMG Got invalid menu option!!!"
-
+        
+        from screens import *

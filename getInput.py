@@ -19,6 +19,11 @@ def getMenuInput():
               or  response == "Two"):
                   response = "2"
                   goodInput = True 
+        elif (response == "3"
+            or response == "three"
+            or response == "Three"):
+                response = "3"
+                goodInput = True
         elif (response == "4"
               or  response == "four"
               or  response == "Four"):
@@ -79,6 +84,16 @@ def getHousePart(prompt):
             goodInput = False
         
     return word
+    
+def getDay (prompt):
+    goodInput = False
+    while not goodInput:
+        word = raw_input(prompt)
+        days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday","monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+        goodInput = True
+        if word not in days:
+            print "Not a day"
+            goodInput = False
         
 def isSwear(word):
     swearList = ["shit",
