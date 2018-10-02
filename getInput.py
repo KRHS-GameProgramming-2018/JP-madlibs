@@ -94,7 +94,9 @@ def getDay (prompt):
         if word not in days:
             print "Not a day"
             goodInput = False
-        
+    return word
+
+
 def isSwear(word):
     swearList = ["shit",
                 "piss",
