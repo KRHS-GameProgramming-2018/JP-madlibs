@@ -25,3 +25,16 @@ def showMenu():
 
     
     return output
+
+def showQuit():
+    output = ""
+    output += "---------------------------------------\n"
+    output += "|                                     |\n"
+    output += "|               Thanks                |\n"
+    output += "|                for                  |\n"
+    output += "|              playing!               |\n"
+    output += "|                                     |\n"
+    output += "---------------------------------------\n"
+
+    
+    return output

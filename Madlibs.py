@@ -14,7 +14,7 @@ while go:
     response = getMenuInput()
     if response == "Q":
         go = False
-        print "Goodbye and thanks for playing"
+        print showQuit()
     elif response == "1":
         print story1.playMadlibs()
         raw_input("Press Enter to Continue")
