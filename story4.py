@@ -2,7 +2,7 @@ from getInput import *
 
 
 def playMadlibs():
-    day1 = 
+    day1 = "friday"
     
     output = " "
     output += "One " + day1
