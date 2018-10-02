@@ -79,6 +79,18 @@ def getHousePart(prompt):
             goodInput = False
         
     return word
+    
+def getZooAnimal(prompt):
+    goodInput = False
+    while not goodInput:
+        word = raw_input(prompt)
+        zooAnimals = ["zebra", "lion", "tiger", "rhino", "monkey", "elephant", "seal"]
+        goodInput = True
+        if word not in zooAnimals:
+            print "Not found in a zoo"
+            goodInput = False
+        
+    return word
         
 def isSwear(word):
     swearList = ["shit",
