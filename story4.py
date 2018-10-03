@@ -12,15 +12,22 @@ def playMadlibs():
     zooAnimals = getZooAnimal("Enter a  plural Zoo Animal: ")
     
     output = " "
-    output += "One " + day1
+    output += "One lovely " + day1
     output += " morning my friend, " + friend1
     output += ", and I were walking down the streets of " + kearsargeTown
-    output += ". When we saw " + friend2
-    output += ' and said "' + interjection
+    output += " looking for something to do and not finding."
+    output += " Suddenly, we saw " + friend2
+    output += " As we got closer we felt something was off."
+    output += ' when we got close enough we saw a dig green booger dripping out of his nose "' + interjection
     output += ' you look awful!" '
-    output += '"Im sick" said ' + friend2
-    output += ". We continued walking for " + numHours1
-    output += " hours until we saw a zoo! We spent " + numHours2
-    output += " looking at the " + zooAnimals
+    output += '"Im sick, I have had this cold for a week and its not getting any better! " said ' + friend2
+    output += ". We ask" + friend2
+    output += " if he wanted to join our search for something to do but he declined."
+    output += " We continued walking around " + kearsargeTown
+    output += " for " + numHours1
+    output += " hours until we saw a Zoo right outside of town! We spent " + numHours2
+    output += " looking at the different animals and amusment " 
+    output += "but, my favorite was looking at the " + zooAnimals
+    output += "."
     
     return output

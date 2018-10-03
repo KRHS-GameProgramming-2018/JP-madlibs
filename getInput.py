@@ -40,6 +40,24 @@ def checkQuit(word):
     if word == "Quit".lower():
         print screens.showQuit()
         sys.exit()
+        
+def checkPlural(Word):
+    goodInput = False
+    while not goodInput:
+        word = raw_input(prompt)
+        checkQuit(word)
+        if not isSwear(word):
+            goodInput = True
+        else:
+            print "Watch your language!"
+        
+        if word[-1] != "s":
+            goodInput = False
+        else:
+            print "Not plural"
+        
+    return word
+    
     
 
 def getWord(prompt):
@@ -155,7 +173,7 @@ def getDay (prompt):
         word = raw_input(prompt)
         days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday","monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
         goodInput = True
-        if word not in days:
+        if word.lower() not in days:
             print "Not a day"
             goodInput = False
     return word
