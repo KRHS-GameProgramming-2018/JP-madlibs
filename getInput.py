@@ -1,3 +1,6 @@
+import screens
+import sys
+
 def getMenuInput():
     goodInput = False
     while not goodInput:
@@ -33,10 +36,17 @@ def getMenuInput():
             print "Please make a valid choice"
     return response
     
+def checkQuit(word):
+    if word == "Quit".lower():
+        print screens.showQuit()
+        sys.exit()
+    
+
 def getWord(prompt):
     goodInput = False
     while not goodInput:
         word = raw_input(prompt)
+        checkQuit(word)
         if not isSwear(word):
             goodInput = True
         else:
@@ -47,6 +57,7 @@ def getNumber(prompt, minNumber, maxNumber):
     goodInput = False
     while not goodInput:
         word = raw_input(prompt+" (Between " + str(minNumber) +  " and " + str(maxNumber) + ") ")
+        checkQuit(word)
         nums = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
         goodInput = True
         for character in word:
@@ -65,6 +76,7 @@ def getPet(prompt):
     goodInput = False
     while not goodInput:
         word = raw_input(prompt)
+        checkQuit(word)
         PetTypes = ["dog", 
                     "cat", 
                     "fish", 
@@ -83,6 +95,7 @@ def getHousePart(prompt):
     goodInput = False
     while not goodInput:
         word = raw_input(prompt)
+        checkQuit(word)
         PartTypes = ["door", 
                      "wall", 
                      "window", 
@@ -101,6 +114,7 @@ def getTown(prompt):
     goodInput = False
     while not goodInput:
         word = raw_input(prompt)
+        checkQuit(word)
         Towns = ["warner", 
                  "sutton", 
                  "new london", 
@@ -119,6 +133,7 @@ def getZooAnimal(prompt):
     goodInput = False
     while not goodInput:
         word = raw_input(prompt)
+        checkQuit(word)
         zooAnimals = ["zebras", 
                       "lions", 
                       "tigers", 
