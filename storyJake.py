@@ -1,9 +1,8 @@
 from getInput import *
 
 
-
 def playMadlibs():
-    friend1 = getWord("Enter a Name: ")
+    friend1 = getFriend("Enter a Name: ")
     numAnimals = getNumber("Enter a number: ", 2, 100000)
     animals1 = getWord("Enter a pluaral animal name: ")
     dayWeek = getDay ("Enter a day of the week: ")
@@ -26,6 +25,8 @@ def playMadlibs():
     output += " rushed across the road! " " I was amazed, guess it wasn't just some normal " + dayWeek 
     output += " in " +city
     
+
     
     return output
-
+    
+ 

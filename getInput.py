@@ -153,12 +153,33 @@ def getDay (prompt):
     goodInput = False
     while not goodInput:
         word = raw_input(prompt)
+        checkQuit(word)
         days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday","monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
         goodInput = True
         if word not in days:
             print "Not a day"
             goodInput = False
     return word
+        
+def getFriend(prompt):
+    goodInput = False
+    while not goodInput:
+        word = raw_input(prompt)
+        checkQuit(word)
+        if not isSwear(word):
+            goodInput = True
+        else:
+            print "Watch your language!"
+        
+        if not "randy":
+            goodInput = True
+        else:
+            print "Too much Randy"
+            goodInput = False
+        
+
+    return word        
+        
         
 def isSwear(word):
     swearList = ["shit",
