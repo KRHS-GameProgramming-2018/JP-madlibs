@@ -8,7 +8,7 @@ def playMadlibs():
     dayWeek = getDay ("Enter a day of the week: ")
     food = getWord ("Enter a food: ")
     city = getWord ("Enter a city: ")
-    noun = getWord (" Enter a noun: ")
+    noun = getWord ("Enter a noun: ")
     
     
     
