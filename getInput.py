@@ -187,7 +187,7 @@ def getFriend(prompt):
         bannedNames = ["randy"]
         if not isSwear(word.lower()):
             goodInput = True
-        else:
+         else:
             print "Watch your language!"
         
         if word.lower() not in bannedNames:
