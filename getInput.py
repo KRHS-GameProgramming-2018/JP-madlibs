@@ -193,10 +193,9 @@ def getFriend(prompt):
         if word.lower() not in bannedNames:
             goodInput = True
         else:
-            print "Too much Randy"
+            print "Don't Use that Name"
             goodInput = False
-        
-
+  
     return word        
         
         
