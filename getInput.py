@@ -207,7 +207,14 @@ def isSwear(word):
                 "ass",
                 "asshole",
                 "bitch",
-                "cock", 
+                "cock",
+                "fucks",
+                "cunts",
+                "shits",
+                "bitches",
+                "cunts",
+                "asses",
+                "fucker", 
                 ]
     if word.lower() in swearList:
         return True
