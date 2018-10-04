@@ -101,7 +101,8 @@ def getPet(prompt):
                     "bird", 
                     "hamster", 
                     "gerbil", 
-                    "snake"]
+                    "snake",
+                    "lizard"]
         goodInput = True
         if word.lower() not in PetTypes:
             print "Not a pet"
@@ -187,7 +188,7 @@ def getFriend(prompt):
         bannedNames = ["randy"]
         if not isSwear(word.lower()):
             goodInput = True
-         else:
+        else:
             print "Watch your language!"
         
         if word.lower() not in bannedNames:
@@ -214,7 +215,10 @@ def isSwear(word):
                 "bitches",
                 "cunts",
                 "asses",
-                "fucker", 
+                "fucker",
+                "dick",
+                "penis",
+                "hell", 
                 ]
     if word.lower() in swearList:
         return True
