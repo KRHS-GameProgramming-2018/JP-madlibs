@@ -27,7 +27,7 @@ def showMenu():
     return output
 
 
-def showSure ():
+def showSure():
     output = ""
     output += "---------------------------------------\n"
     output += "|                                     |\n"
