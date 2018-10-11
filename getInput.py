@@ -234,5 +234,6 @@ def isSwear(word):
                 ]
     if word.lower() in swearList:
         return True
+    
     else:
         return False

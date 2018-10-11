@@ -13,16 +13,11 @@ while go:
     print showMenu()
     response = getMenuInput()
     if response == "Q":
-        #go = False
-        #print showSure():
-         #   if response == "Y":
-                print showQuit()
-          #  elif response == "N":
-           #     print showMenu ()
-        
-    elif response == "1":
-        print story1.playMadlibs()
-        raw_input("Press Enter to Continue")
+        go = False
+        print showQuit()
+    # ~ elif response == "1":
+        # ~ print story1.playMadlibs()
+        # ~ raw_input("Press Enter to Continue")
     elif response == "2":
         print story2.playMadlibs()
         raw_input("Press Enter to Continue")
