@@ -18,13 +18,13 @@ while go:
     # ~ elif response == "1":
         # ~ print story1.playMadlibs()
         # ~ raw_input("Press Enter to Continue")
-    elif response == "2":
+    elif response == "1":
         print story2.playMadlibs()
         raw_input("Press Enter to Continue")
-    elif response == "3":
+    elif response == "2":
         print storyJake.playMadlibs()
         raw_input("Press Enter to Continue")
-    elif response == "4":
+    elif response == "3":
         print story4.playMadlibs()
         raw_input("Press Enter to Continue")
     else:
