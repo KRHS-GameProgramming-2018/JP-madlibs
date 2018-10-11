@@ -6,7 +6,7 @@ import story4
 import storyJake
 
 print showSplash()
-raw_input("Press Enter to Start")
+raw_input("Press Enter to Start ")
 
 go = True
 while go:
