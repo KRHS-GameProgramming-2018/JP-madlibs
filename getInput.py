@@ -17,18 +17,6 @@ def getMenuInput():
               or response == "Exit"):
               response = "Q"
               goodInput = True   
-        elif (response == "Y"
-                or response == "y"
-                or response == "yes"
-                or response == "Yes"):
-                    response = "Y"
-                    goodInput == True
-        elif (response == "N"
-                or response == "n"
-                or response == "no"
-                or response == "No"):
-                    response = "N"
-                    goodInput == True
         elif (response == "2"
               or  response == "two"
               or  response == "Two"):
