@@ -225,8 +225,8 @@ def isSwear(word):
                 "penis",
                 "hell", 
                 ]
-    if word.lower() in swearList:
-        return True
-    
-    else:
-        return False
+    words = word.split()
+    for w in words:
+        if w.lower() in swearList:
+            return True
+    return False

@@ -5,7 +5,7 @@ def playMadlibs():
     day1 = getDay("Enter a day of the week: ")
     friend1 = getWord("Enter a Name: ")
     kearsargeTown = getTown("Enter a town in kearsarge: ")
-    friend2 = getWord("Enter a Name: ")
+    friend2 = getWord("Enter a  Different Name: ")
     interjection = getWord("Enter an Interjection: ")
     numHours1 = getNumber("Enter a number: ", 2, 12)
     numHours2 = getNumber("Enter a number: ", 2, 12)
@@ -18,10 +18,10 @@ def playMadlibs():
     output += " looking for something to do and not finding."
     output += " Suddenly, we saw " + friend2
     output += " As we got closer we felt something was off."
-    output += ' when we got close enough we saw a dig green booger dripping out of his nose "' + interjection
+    output += ' when we got close enough we saw a dig green booger dripping out of his nose \n"' + interjection
     output += ' you look awful!" '
-    output += '"Im sick, I have had this cold for a week and its not getting any better! " said ' + friend2
-    output += ". We ask" + friend2
+    output += '\n"Im sick, I have had this cold for a week and its not getting any better! " said ' + friend2
+    output += ". We asked " + friend2
     output += " if he wanted to join our search for something to do but he declined."
     output += " We continued walking around " + kearsargeTown
     output += " for " + numHours1
