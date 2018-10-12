@@ -13,12 +13,8 @@ while go:
     print showMenu()
     response = getMenuInput()
     if response == "Q":
-        print showSure()
-        response = raw_input("Are you sure you want to quit?   ")
-        if response.upper() == "Y":
-            go = False
-            print showQuit()
-    
+        go = False
+        print showQuit()
     # ~ elif response == "1":
         # ~ print story1.playMadlibs()
         # ~ raw_input("Press Enter to Continue")
