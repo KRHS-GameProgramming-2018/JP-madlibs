@@ -127,6 +127,11 @@ def getHousePart(prompt):
                      "door frame", 
                      "head beam", 
                      "walls"]
+        if word.lower() == "pylon":
+            print "You must construct addtional pylons!"
+            print screens.pylonPic
+            sys.exit()
+        
         goodInput = True
         if word.lower() not in PartTypes:
             print "Not a part of a house"
