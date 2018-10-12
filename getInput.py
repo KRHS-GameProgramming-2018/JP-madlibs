@@ -38,8 +38,13 @@ def getMenuInput():
     
 def checkQuit(word):
     if word == "Quit".lower():
-        print screens.showQuit()
-        sys.exit()
+        print screens.showSure()
+        response = raw_input("Are you sure you want to quit?   ")
+        if response.upper() == "Y":
+            print screens.showQuit()
+            sys.exit()
+        
+        
         
 def checkPlural(Word):
     goodInput = False
