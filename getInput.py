@@ -70,6 +70,10 @@ def getWord(prompt):
     while not goodInput:
         word = raw_input(prompt)
         checkQuit(word)
+        if word.lower() == "pylon" or word.lower() == "pylons":
+            print "You must construct addtional pylons!"
+            print screens.pylonPic()
+            sys.exit()
         if not isSwear(word):
             goodInput = True
         else:
@@ -108,6 +112,10 @@ def getPet(prompt):
                     "gerbil", 
                     "snake",
                     "lizard"]
+        if word.lower() == "pylon" or word.lower() == "pylons":
+            print "You must construct addtional pylons!"
+            print screens.pylonPic()
+            sys.exit()
         goodInput = True
         if word.lower() not in PetTypes:
             print "Not a pet"
@@ -126,10 +134,11 @@ def getHousePart(prompt):
                      "ceiling", 
                      "door frame", 
                      "head beam", 
-                     "walls"]
-        if word.lower() == "pylon":
+                     "walls",
+                     "roof"]
+        if word.lower() == "pylon" or word.lower() == "pylons":
             print "You must construct addtional pylons!"
-            print screens.pylonPic
+            print screens.pylonPic()
             sys.exit()
         
         goodInput = True
@@ -151,6 +160,10 @@ def getTown(prompt):
                  "springfield", 
                  "newbury", 
                  "bradford"]
+        if word.lower() == "pylon" or word.lower() == "pylons":
+            print "You must construct addtional pylons!"
+            print screens.pylonPic()
+            sys.exit()
         goodInput = True
         if word.lower() not in Towns:
             print "Not a town in Kearsarge"
@@ -170,6 +183,10 @@ def getZooAnimal(prompt):
                       "monkeys", 
                       "elephants", 
                       "seals"]
+        if word.lower() == "pylon" or word.lower() == "pylons":
+            print "You must construct addtional pylons!"
+            print screens.pylonPic()
+            sys.exit()
         goodInput = True
         if word.lower() not in zooAnimals:
             print "Not found in a zoo"
@@ -184,6 +201,10 @@ def getDay (prompt):
         word = raw_input(prompt)
         checkQuit(word)
         days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday","monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+        if word.lower() == "pylon" or word.lower() == "pylons":
+            print "You must construct addtional pylons!"
+            print screens.pylonPic()
+            sys.exit()
         goodInput = True
         if word.lower() not in days:
             print "Not a day"
