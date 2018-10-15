@@ -57,13 +57,13 @@ def showQuit():
     return output
 
 
-def pylonPic():
+def showPylons():
     output = ""
     output += "       O           O          O       \n"
     output += "      / \         / \        / \      \n"
     output += "     /   \       /   \      /   \     \n"
-    output += "    |/\/\/|     |/\/\/|    |/\/\/|    \n"
-    output += "    |/\/\/|     |/\/\/|    |/\/\/|    \n"
+    output += "    |--/\-|     |-/\--|    |--/\-|    \n"
+    output += "    |--\/-|     |-\/--|    |--\/-|    \n"
     output += "     \   /       \   /      \   /     \n"
     output += "      \ /         \ /        \ /      \n"
     output += "       O           O          O       \n"
@@ -71,3 +71,4 @@ def pylonPic():
 
     
     return output
+

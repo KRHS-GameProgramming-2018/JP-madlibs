@@ -7,7 +7,7 @@ def playMadlibs():
     animals1 = getWord("Enter a pluaral animal name: ")
     holiday = getWord ("Enter a holiday: ")
     Pet = getPet("Enter a geneiric pet: ")
-    housePart = getHousePart("Enter a house part: ")
+    housePart = getHousePart("Enter a part of a house: ")
     numSleep = getNumber("Enter a number: ", 2, 10)
     thing1 = getWord("Enter a thing: ")
     

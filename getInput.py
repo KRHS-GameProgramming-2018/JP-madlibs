@@ -72,7 +72,7 @@ def getWord(prompt):
         checkQuit(word)
         if word.lower() == "pylon" or word.lower() == "pylons":
             print "You must construct addtional pylons!"
-            print screens.pylonPic()
+            print screens.showPylons()
             sys.exit()
         if not isSwear(word):
             goodInput = True
@@ -114,7 +114,7 @@ def getPet(prompt):
                     "lizard"]
         if word.lower() == "pylon" or word.lower() == "pylons":
             print "You must construct addtional pylons!"
-            print screens.pylonPic()
+            print screens.showPylons()
             sys.exit()
         goodInput = True
         if word.lower() not in PetTypes:
@@ -138,7 +138,7 @@ def getHousePart(prompt):
                      "roof"]
         if word.lower() == "pylon" or word.lower() == "pylons":
             print "You must construct addtional pylons!"
-            print screens.pylonPic()
+            print screens.showPylons()
             sys.exit()
         
         goodInput = True
@@ -162,7 +162,7 @@ def getTown(prompt):
                  "bradford"]
         if word.lower() == "pylon" or word.lower() == "pylons":
             print "You must construct addtional pylons!"
-            print screens.pylonPic()
+            print screens.showPylons()
             sys.exit()
         goodInput = True
         if word.lower() not in Towns:
@@ -185,7 +185,7 @@ def getZooAnimal(prompt):
                       "seals"]
         if word.lower() == "pylon" or word.lower() == "pylons":
             print "You must construct addtional pylons!"
-            print screens.pylonPic()
+            print screens.showPylons()
             sys.exit()
         goodInput = True
         if word.lower() not in zooAnimals:
@@ -203,7 +203,7 @@ def getDay (prompt):
         days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday","monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
         if word.lower() == "pylon" or word.lower() == "pylons":
             print "You must construct addtional pylons!"
-            print screens.pylonPic()
+            print screens.showPylons()
             sys.exit()
         goodInput = True
         if word.lower() not in days:
