@@ -106,7 +106,7 @@ def getPet(prompt):
         checkQuit(word)
         PetTypes = ["dog", 
                     "cat", 
-                    "fish", 
+                    "fish",
                     "bird", 
                     "hamster", 
                     "gerbil", 
