@@ -4,8 +4,8 @@ import story1
 import story2
 import story4
 import storyJake
-
 print showSplash()
+import EasterEgg
 raw_input("Press Enter to Start ")
 
 go = True
@@ -27,6 +27,9 @@ while go:
     elif response == "3":
         print story4.playMadlibs()
         raw_input("Press Enter to Continue")
+    elif response == "3.14":
+        print EasterEgg.printPi()
+        raw_input ("Press Enter to Continue")
     else:
         print "OMG Got invalid menu option!!!"
         

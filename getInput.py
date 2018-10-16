@@ -1,5 +1,6 @@
 import screens
 import sys
+import EasterEgg
 
 def getMenuInput():
     goodInput = False
@@ -32,6 +33,10 @@ def getMenuInput():
               or  response == "Four"):
                   response = "4"
                   goodInput = True 
+        elif (response == "3.14"
+              or response == "pi"):
+                response = "3.14"
+                goodInput = True
         else:
             print "Please make a valid choice"
     return response
@@ -81,6 +86,9 @@ def getNumber(prompt, minNumber, maxNumber):
     while not goodInput:
         word = raw_input(prompt+" (Between " + str(minNumber) +  " and " + str(maxNumber) + ") ")
         checkQuit(word)
+        if word == ("3.14"):
+            print EasterEgg.printPi()
+            goodInput = True
         nums = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
         goodInput = True
         for character in word:
@@ -91,6 +99,7 @@ def getNumber(prompt, minNumber, maxNumber):
         if goodInput and (int(word) < minNumber or int(word) > maxNumber):
             goodInput = False
             print "Out of Range"
+    
         
             
     return word
