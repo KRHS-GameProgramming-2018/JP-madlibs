@@ -57,29 +57,20 @@ def showQuit():
 
     
     return output
-    
-    
-    
-def showEgg():
-    items = [unichr(i) for i in range(0x30a1,0x30ff + 1)]
 
-    for i in range(1,11): # spaces and numbers
-        items.append(str(i))
-        items.append(" "*i)
-    
-    row = 30
-    column= 120
-    
+
+def showPylons():
     output = ""
- 
-    for i in range(row): #for every row
-        s = ''      #new string
-        for j in range(column): #for every column (or character)
-            ri = random.randrange(len(items)) #random index
-            s += items[ri]
-
-        output += s + "\n"
+    output += "       O           O          O       \n"
+    output += "      / \         / \        / \      \n"
+    output += "     /   \       /   \      /   \     \n"
+    output += "    |--/\-|     |-/\--|    |--/\-|    \n"
+    output += "    |--\/-|     |-\/--|    |--\/-|    \n"
+    output += "     \   /       \   /      \   /     \n"
+    output += "      \ /         \ /        \ /      \n"
+    output += "       O           O          O       \n"
+    
 
     
     return output
-    
+
