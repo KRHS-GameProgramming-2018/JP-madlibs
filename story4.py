@@ -15,9 +15,9 @@ def playMadlibs():
     output += "One lovely " + day1
     output += " morning my friend, " + friend1
     output += ", and I were walking down the streets of " + kearsargeTown
-    output += " looking for something to do and not finding."
+    output += " looking for something to do and not finding anything."
     output += " Suddenly, we saw " + friend2
-    output += " As we got closer we felt something was off."
+    output += " As we got closer we felt something seemed off."
     output += ' when we got close enough we saw a dig green booger dripping out of his nose \n"' + interjection
     output += ' you look awful!" '
     output += '\n"Im sick, I have had this cold for a week and its not getting any better! " said ' + friend2
