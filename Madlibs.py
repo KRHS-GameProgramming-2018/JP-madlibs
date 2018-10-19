@@ -30,6 +30,9 @@ while go:
     elif response == "3.14":
         print EasterEgg.printPi()
         raw_input ("Press Enter to Continue")
+    elif response == "4":
+        print EasterEgg.crossover()
+        raw_input ("Press Enter to Continue")
     else:
         print "OMG Got invalid menu option!!!"
         
