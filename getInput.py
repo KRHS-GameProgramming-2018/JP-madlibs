@@ -188,7 +188,8 @@ def getZooAnimal(prompt):
         zooAnimals = ["zebras", 
                       "lions", 
                       "tigers", 
-                      "rhinos", 
+                      "rhinos",
+                      "bears", 
                       "monkeys", 
                       "elephants", 
                       "seals"]
