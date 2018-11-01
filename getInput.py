@@ -259,7 +259,12 @@ def isSwear(word):
                 "fucker",
                 "dick",
                 "penis",
-                "hell", 
+                "hell",
+                "dildo",
+                "fag",
+                "faggot",
+                "fucked",
+                 
                 ]
     words = word.split()
     for w in words:
