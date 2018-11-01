@@ -1,3 +1,5 @@
+# you might as well delete this file
+
 # ~ from getInput import *
 
 # ~ def playMadlibs():
