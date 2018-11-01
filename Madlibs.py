@@ -1,3 +1,5 @@
+# 200/200 - PD; Great work overall. There are a few things I would clean up; mostly related to file names and extra files. I would also considder making a checkPylons function to handle the code for that.
+
 from screens import *
 from getInput import *
 import story1
