@@ -17,7 +17,7 @@ def printPi():
     return file_contents
 
 
-def crossover():
+def crossover(): # very clever!
     print ("What is this, a crossover episode?")
     time.sleep(1.5)
 
