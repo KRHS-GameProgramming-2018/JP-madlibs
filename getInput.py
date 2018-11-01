@@ -77,7 +77,7 @@ def getWord(prompt):
         checkQuit(word)
         if word.lower() == "pylon" or word.lower() == "pylons":
             print "You must construct addtional pylons!"
-            print screens.showPylons()
+            print screens.showPylons()                          # Maybe this could be a function by itself; so you wouldn't have to duplicate this code so many times.
             sys.exit()
         if not isSwear(word):
             goodInput = True
